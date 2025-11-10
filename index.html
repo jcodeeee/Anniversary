@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Anniversary!</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('loader').classList.add('hide');
+            }, 2200);
+        });
+        // Scroll to top button
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('scrollTopBtn');
+            if (window.scrollY > 200) btn.classList.add('show');
+            else btn.classList.remove('show');
+        });
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <img src="/1c22270e-cac5-4770-a669-ec2b5bcb4f67.jpg" alt="Loading" class="loader-bg">
+            <div class="loader-text">
+                <h2>Happy Anniversary! Love &lt;3</h2>
+                <p>Loading our memories...</p>
+            </div>
+        </div>
+    </div>
+    <!-- Floating hearts background -->
+    <div class="floating-hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="#intro">Home</a>
+            <a href="#story">Story</a>
+            <a href="#reasons">Reasons</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+        <!-- Heart SVG decoration -->
+        <div class="heart-svg">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+                <path d="M40 72s-24-18-24-36a16 16 0 0 1 32 0 16 16 0 0 1 32 0c0 18-24 36-24 36z" fill="#e75480"/>
+                <circle cx="40" cy="30" r="6" fill="#fff" opacity="0.5"/>
+            </svg>
+        </div>
+        <!-- Sweet Intro Section -->
+        <section class="intro" id="intro">
+            <div class="heart-frame">
+                <img src="/ada22e26-c19c-4aa2-a0ac-1698334137e3.jpg" alt="Couple" class="intro-photo">
+            </div>
+            <h1>Happy Anniversary, <span class="name">Lalove Bea Navarro</span>!</h1>
+            <h3 class="subtitle">Celebrating our love story 💕</h3>
+            <p class="intro-poem">
+                "From the moment our eyes met,<br>
+                my heart knew you were my forever.<br>
+                Thank you for every smile, every hug,<br>
+                and every beautiful day together."
+            </p>
+        </section>
+        <div class="divider"></div>
+        <!-- Message Section -->
+        <section class="message">
+            <p>
+                Every moment with you is a treasure.<br>
+                Thank you for being my everything.<br>
+                I love you more every day! 💖<br>
+                <span class="sweet">You make my world beautiful.</span>
+            </p>
+        </section>
+        <!-- Our Story Timeline -->
+        <section class="story" id="story">
+            <h2>📖 Our Story</h2>
+            <div class="heart-divider">
+                <svg width="60" height="24" viewBox="0 0 60 24">
+                    <path d="M30 22s-8-7-16-7a8 8 0 0 1 16 0 8 8 0 0 1 16 0c-8 0-16 7-16 7z" fill="#e75480"/>
+                </svg>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <span class="date">The First Glance</span>
+                    <span class="desc">When our eyes met, the world faded and my heart whispered, "This is the one."</span>
+                </li>
+                <li>
+                    <span class="date">Sweet Beginnings</span>
+                    <span class="desc">Every message, every laugh, every moment with you felt like a dream come true.</span>
+                </li>
+                <li>
+                    <span class="date">Our First Date</span>
+                    <span class="desc">Butterflies, smiles, and gentle touches—my heart raced with every second by your side.</span>
+                </li>
+                <li>
+                    <span class="date">Falling in Love</span>
+                    <span class="desc">Your kindness, your warmth, your love—slowly, you became my favorite place to be.</span>
+                </li>
+                <li>
+                    <span class="date">Adventures Together</span>
+                    <span class="desc">From silly selfies to deep talks, every adventure with you is a memory I hold close.</span>
+                </li>
+                <li>
+                    <span class="date">Forever Us</span>
+                    <span class="desc">With every anniversary, I promise to love you deeper, cherish you more, and never let go.</span>
+                </li>
+            </ul>
+            <div class="love-note">
+                <span>Thank you for being my miracle, my best friend, and my forever. I love you endlessly.</span>
+            </div>
+        </section>
+        <!-- Reasons I Love You -->
+        <section class="reasons" id="reasons">
+            <h2>💗 Reasons I Love You</h2>
+            <ul>
+                <li><span class="animated-heart"></span>Your beautiful smile</li>
+                <li><span class="animated-heart"></span>Your caring heart</li>
+                <li><span class="animated-heart"></span>The way you make me laugh</li>
+                <li><span class="animated-heart"></span>Your endless support</li>
+                <li><span class="animated-heart"></span>Every moment with you feels special</li>
+            </ul>
+        </section>
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <h2>🖼️ Gallery</h2>
+            <div class="gallery-images">
+                <img src="/313d79cf-bfbb-40bf-bed7-8021f3231d7d.jpg" alt="Memory 1">
+                <img src="/34939493-6a48-4bbb-a13e-1c9687a8523c.jpg" alt="Memory 2">
+                <img src="/5d1c523e-9505-463c-8a3d-65bdf9f33d23.jpg" alt="Memory 3">
+            </div>
+        </section>
+        <!-- Sweet Quote -->
+        <section class="quote">
+            <blockquote>
+                "You are my today and all of my tomorrows."
+            </blockquote>
+        </section>
+        <!-- Closing Love Note -->
+        <section class="closing-note">
+            <span>
+                "No matter where life takes us, my heart will always find its way to you.<br>
+                Happy Anniversary, my love. Here's to forever with you."
+            </span>
+        </section>
+        <button id="scrollTopBtn" onclick="scrollToTop()" title="Back to top">↑</button>
+        <footer>
+            <p>
+                Forever yours,<br>
+                <span class="your-name">Lalove Jc Rodriguez</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
